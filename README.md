@@ -1,6 +1,6 @@
 # CableThermalAnalysis
 ### Summary:
-This program was developed based on the paper titled "Fundamentals of the Thermal Analysis of Complex Arrangements of Underground Heat Sources" by Brakelmann Et al. and IEC 60287. Within the program, the WorkeSpace.py file allows the user to create installation scenarios in which DC cables of selectable properties and loading can be modeled. The simulation is a steady state calculator that assumes uniform soil conditions throughout the installation.
+This program was developed based on the paper titled "Fundamentals of the Thermal Analysis of Complex Arrangements of Underground Heat Sources" by Brakelmann Et al. and IEC 60287. Within the program, the WorkeSpace.py file allows the user to create installation scenarios in which DC cables of selectable properties and loading can be modeled. The simulation calculates the steady state temperature in degrees Celsius assuming uniform soil conditions and constant loading.
 
 ### Cables Crossing Example:
 Two circuits consisting of parallel Aluminum conductors loaded to 300 Amps are modeled crossing each other. The installation is modeled in the work space, then run. Results are shown plotted via color scale merged with the installation as well as the temperature along the length of each individual cable in the installation.  

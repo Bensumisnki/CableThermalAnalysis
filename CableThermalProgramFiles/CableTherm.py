@@ -180,7 +180,7 @@ class CableThermalCalculation:
                             color='cableTemp')
         fig1.update_layout(scene=dict(zaxis=dict(range=[None, 0], ), ),)
 
-        #fig1.show()
+        fig1.show()
 
         frames=[]
         for cable in self.installation.cable_list:
@@ -197,9 +197,9 @@ class CableThermalCalculation:
 
         result = pd.concat(frames)
         fig2 = px.scatter(result,x='cableLength',y='cableTemp',color='cableID')
-        #fig2.show()
-        fig1.write_html("C:/Users/bensu/PycharmProjects/CableThermAnalysis - Steady State/.venv/3DLayout.html")
-        fig2.write_html("C:/Users/bensu/PycharmProjects/CableThermAnalysis - Steady State/.venv/2DTemp.html")
+        fig2.show()
+        #fig1.write_html("C:/Users/bensu/PycharmProjects/CableThermAnalysis - Steady State/.venv/3DLayout.html")
+        #fig2.write_html("C:/Users/bensu/PycharmProjects/CableThermAnalysis - Steady State/.venv/2DTemp.html")
         return fig1, fig2
 
         '''
